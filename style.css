@@ -30,6 +30,32 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+.section-title {
+    font-size: 3.125rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 16px;
+
+}
+
+.section-description {
+    font-weight: 400;
+    size: 1.372rem;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 888px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.btn-primary {
+    background-color: #E95A08;
+    border: none;
+    color: white;
+    padding: 20px 80px;
+    width: 270px;
+}
+
 /* header */
 
 /* nav */
@@ -79,19 +105,49 @@
 }
 
 .banner-img,
-.banner-column{
+.banner-column {
     width: 100%;
+}
+
+
+/* our-plants */
+.img-container {
+    margin: 0 auto;
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.plant-intro {
+    margin-bottom: 50px;
+}
+
+.product-sample>h4 {
+    font-weight: 500;
+    font-size: 1.375rem;
+    text-align: center;
+}
+
+.product-sample {
+    margin-bottom: 30px;
+}
+
+.price {
+    font-weight: 700;
 }
 
 @media screen and (max-width:576px) {
 
-    .nav{
+    .nav {
         justify-content: center;
         align-items: center;
-        gap: 185px;
+        /* max-width: 361px; */
         width: 100%;
-        margin: 13px 16px;
+        margin: 0 auto;
+        /* gap: 120px; */
+        /* margin: 13px 16px; */
     }
+
     .hide {
         display: none;
     }
@@ -100,13 +156,38 @@
         min-width: 110px;
     }
 
-    .banner{
+    .banner {
         flex-direction: column;
     }
-    #col-2{
-        order:1;
+
+    #col-2 {
+        order: 1;
     }
-    #col-1{
+
+    #col-1 {
         order: 2;
+    }
+.section-title,.section-description{
+    /* text-align: center; */
+}
+.product-sample{
+    width: 171px;
+}
+    .img-container {
+        /* width: 362px; */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 0 auto;
+    }
+    .img-container>h4{
+        text-align: center;
+    }
+    .product-img{
+height: 196px;
+width: 171px;
+    }
+    .btn-primary{
+        width: 171px;
+        padding: 20px 30px;
     }
 }
